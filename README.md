@@ -2,7 +2,7 @@
 
 # CAFA - a Controllable Automatic Foley Artist
 
-[Website (TODO)](TODO) |
+[Demo Page (TODO)](TODO) |
 [Paper](https://arxiv.org/abs/2504.06778) |
 [Model](https://huggingface.co/MichaelFinkelson/CAFA-avclip)
 
@@ -14,35 +14,9 @@
 
 This repository provides the inference tools, pretrained weights, and test results to reproduce our results or build upon our work.
 # Examples
-## Demo video
-
 https://github.com/user-attachments/assets/60e2e8b8-27c3-4060-aef9-2ed2cadee0ad.mp4
 
-## Creative Prompts Conditioning
-
-### Typing on typewriter
-
-https://github.com/user-attachments/assets/b214fe1f-75ea-4661-a951-42af44230809.mp4
-
-### Playing drumkit
-
-https://github.com/user-attachments/assets/5f4b5ac6-0fdc-4fac-98c0-7005030790b0.mp4
-
-### Man burping
-
-https://github.com/user-attachments/assets/46046adf-6feb-425c-a309-ee505409d5bd.mp4
-
-### Cattle mooing
-
-https://github.com/user-attachments/assets/b7222e3f-57a6-40d0-97a7-0f2c065dca9b.mp4
-
-### Dog barking
-
-https://github.com/user-attachments/assets/55c1a04b-ce00-4ef8-8fd6-f28bf6335ae4.mp4
-
-### Typing on typewriter (alternate)
-
-https://github.com/user-attachments/assets/5c731201-273c-4764-859b-b91d012e049f.mp4
+For more examples, visit our [demo page](TODO)
 # Installation
 1. We recommend working in a fresh enviornment
 ```bash
