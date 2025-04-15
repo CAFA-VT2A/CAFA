@@ -1,0 +1,460 @@
+<!doctype html>
+<html>
+<head>
+	<title>CAFA</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" type="image/x-icon" href="resources/archive.svg">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  	<link href="style.css" rel="stylesheet" type="text/css">
+	<meta property="og:image" content="resources/teaser.png"/> 
+	<meta property="og:title" content="Academic Webpage Template" />
+	<meta property="og:description" content="a webpage template for academic projects" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/ad96f96272.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	
+	<!-- navigation bar on the top, nav bar stick to the top -->
+	<nav id="navbar_top" class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary" style="margin-bottom: 15px;">
+		<div class="container">
+				<a class="navbar-brand" href="">CAFA: a Controllable Automatic Foley Artist</a>
+				
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="main_nav">
+				<!-- <span><a class="btn btn-outline-primary" href='https://arxiv.org' role="button" style="font-size: 16px;"><i class="ai ai-arxiv"></i> Arxiv</a></span> -->
+
+			<ul class="navbar-nav ms-auto">
+				<li class="nav-item"><a class="nav-link" href="#abstract">Abstract</a></li>
+				<li class="nav-item"><a class="nav-link" href="#TVTA">TV2A</a></li>
+				<!-- <li class="nav-item"><a class="nav-link" href="#video">Video</a></li> -->
+				<!-- <li class="nav-item"><a class="nav-link" href="#paper">Paper</a></li> -->
+			</ul>
+			</div> 
+		</div> 
+		</nav>
+	<!-- end nav bar -->
+
+	<div class="container-xl"> 
+		<!-- top button -->
+		<button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+		<!-- end top button -->
+
+		<!-- top - author names, affiliation and links -->
+		<center>
+			<h1>  CAFA: a Controllable Automatic Foley Artist </h1>
+			<!-- <h4>Published in</h4> -->
+			<div class="container">
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<span style="font-size:24px"><a target="_blank" rel="noopener noreferrer">Roi Benita<span class="sup">*
+						</span></a></span>
+					</div>
+					<div class="col-md-auto">
+						<span style="font-size:24px"><a target="_blank" rel="noopener noreferrer">Michael Finkelson<span class="sup">*</span></a></span>
+					</div>
+					<div class="col-md-auto">
+						<span style="font-size:24px"><a target="_blank" rel="noopener noreferrer">Tavi Halperin</a></span>
+					</div>
+					<div class="col-md-auto">
+						<span style="font-size:24px"><a target="_blank" rel="noopener noreferrer">Gleb Sterkin</a></span>
+					</div>
+					<div class="col-md-auto">
+						<span style="font-size:24px"><a target="_blank" rel="noopener noreferrer">Yossi Adi</a></span>
+					</div>
+				</div>
+			</div>
+
+			<p class="text-center affilation" style="font-size: 8pt;">*Equal Contribution<p>
+
+			<div class="container">
+				<div class="row justify-content-md-center">
+					<div class="col-md-auto">
+						<span><a class="btn btn-outline-primary" href='https://arxiv.org/abs/2504.06778' role="button" style="font-size: 24px;"><i class="fas fa-file-pdf"></i> Paper</a></span>
+					</div>
+					<!-- <div class="col-md-auto">
+						<span><a class="btn btn-outline-primary" href='supplementary.pdf' role="button" style="font-size: 24px;"><i class="fas fa-file-pdf"></i> Supplementary</a></span>
+					</div> -->
+					<div class="col-md-auto">
+						<span><a class="btn btn-outline-primary" href='https://github.com/finmickey/CAFA' role="button" style="font-size: 24px;"><i class="fab fa-github"></i> Code</a></span>
+					</div>
+				</div>
+			</div>
+		</center>
+		<!-- end top -->
+
+		<!-- abstract and teaser image-->
+		<center>
+			<!-- <div class="container" style="margin-top: 20px;">
+				<div class="row justify-content-md-center">
+					<p  style="font-size:18px;"><strong>Teaser Image</strong></p>
+				</div>
+				<div class="row justify-content-md-center">
+					<img alt="" id="teaser" src="./resources/teaser.png" style="max-width: 375px;"/>
+				</div>
+			</div> -->
+
+			<br><br>
+			<hr id="abstract">
+		<h1 style="margin-top: 10px;">Abstract</h1>
+		</center>
+		<p>
+			Foley is a key element in video production, refers to the process of adding an audio signal to a silent video while ensuring semantic and temporal alignment. In recent years, the rise of personalized content creation and advancements in automatic video-to-audio models have increased the demand for greater user control in the process. One possible approach is to incorporate text to guide audio generation. While supported by existing methods, challenges remain in ensuring compatibility between modalities, particularly when the text introduces additional information or contradicts the sounds naturally inferred from the visuals.
+In this work, we introduce CAFA (Controllable Automatic Foley Artist) a video-and-text-to-audio model that generates semantically and temporally aligned audio for a given video, guided by text input. CAFA is built upon a text-to-audio model and integrates video information through a ControlNet mechanism.
+By incorporating text, users can refine semantic details and introduce creative variations, guiding the audio synthesis beyond the expected video contextual cues. 
+Experiments show that besides its superior quality in terms of semantic alignment and audio-visual synchronization our proposed model enable high textual controllability which demonstrated in subjective and objective evaluations.
+
+		</p>
+		<hr id="Video">
+		<!-- end abstract and teaser image-->
+		<p align="center">
+			<iframe width="560" height="315" src="./resources/video/Original_Video.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>		</p>
+
+		<!-- video of a talk about your paper (youtube embedding) -->
+		<!-- <center><h1>Talk</h1></center>
+		<p align="center">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/ly36kn0ug4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>		</p>
+
+		<!-- Images -->
+		
+		<hr id="Sound_Desgin">
+		<!-- Designing sound through text -->
+		<!-- Taking automated Foley to the next level! -->
+		<center><h1 style="margin-top: 65px;">Creative Automated Foley with textual control</h1>
+			<p> 
+				
+				Given a silent video, CAFA generates temporally aligned sounds while enabling creative sound design through text prompts.
+				</p>
+			<p align="center">
+				<iframe width="560" height="315" src="./resources/video/V2A_00597_audio_1.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>		</p>
+			<p>An iconic scene from Jurassic Park, where
+				water in a glass shakes due to the approaching footsteps of a T-Rex. <br>
+				Inferring the generated sound from the video alone is insufficient,
+				as the task is inherently ambiguous. <br>
+				Our method leverages the
+				prompt ”T-Rex Stomping” to generate a synchronized audio track
+				that aligns with both the visual timing and artistic intent.</p>
+		
+			<!-- <br>They can either be static -->
+
+		</center>
+
+		
+		<hr id="TVTA">
+		<center><h1 style="margin-top: 65px;"> Video To Audio controled by Text input </h1>
+		<p>Explore how different models generate audio based on a given video and text prompt!  <br> Use the buttons on the left to select a text prompt.  
+			Each column in the table <br> represents the synthesis output of a different model, while the first column <br> displays the original video with its original audio.</p>
+			<!-- <br>They can either be static -->
+
+		</center>
+		<!-- images with drop down menu -->
+		<!-- <div class="container">
+			<p  style="margin-top: 35px;">
+			Or can be chosen from a dropdown menu, for some easy comparison between different methods for example 
+			</p> -->
+		<!-- </div>  -->
+		
+		<center>
+
+			<table>
+				<tr>
+					<th></th>
+					<th style="text-align: center;">GT</th>
+					<th style="text-align: center;">CAFA (ours)</th>
+					<th style="text-align: center;">MMAudio</th>
+					<th style="text-align: center;">FoleyCrafter</th>
+					<th style="text-align: center;">REWAS</th>
+				</tr>
+			
+				<tr>
+					<td>
+						<div class="content-container">
+							<div class="button-container">
+								<button class="btn btn-outline-primary" onclick="changeVideos_keyboard('__typing_on_typewriter')">Typing on Typewriter</button>
+								<button class="btn btn-outline-primary" onclick="changeVideos_keyboard('_dog_barking')">Dog Barking</button>
+							</div>
+						</div>
+					</td>
+					<td><video id="videoGT_keyboard" controls><source src="./resources/video/Table_1/keyboard/GT_typing_on_typewriter.mp4" type="video/mp4"></video></td>
+					<td><video id="video1_keyboard" controls><source src="./resources/video/Table_1/keyboard/our__typing_on_typewriter.mp4" type="video/mp4"></video></td>
+					<td><video id="video2_keyboard" controls><source src="./resources/video/Table_1/keyboard/mmaudio__typing_on_typewriter.mp4" type="video/mp4"></video></td>
+					<td><video id="video3_keyboard" controls><source src="./resources/video/Table_1/keyboard/foley_crafter__typing_on_typewriter.mp4" type="video/mp4"></video></td>
+					<td><video id="video4_keyboard" controls><source src="./resources/video/Table_1/keyboard/rewas__typing_on_typewriter.mp4" type="video/mp4"></video></td>
+				</tr>
+
+				<tr>
+					<td>
+						<div class="content-container">
+							<div class="button-container">
+								<button class="btn btn-outline-primary" onclick="changeVideos_drum('_playing_drum_kit')">Playing drum kit</button>
+								<button class="btn btn-outline-primary" onclick="changeVideos_drum('_typing_on_typewriter')">Typing on typewriter</button>
+							</div>
+						</div>
+					</td>
+					<td><video id="videoGT_drum" controls><source src="./resources/video/Table_1/drum/GT_playing_drum_kit.mp4" type="video/mp4"></video></td>
+					<td><video id="video1_drum" controls><source src="./resources/video/Table_1/drum/our_playing_drum_kit.mp4" type="video/mp4"></video></td>
+					<td><video id="video2_drum" controls><source src="./resources/video/Table_1/drum/mmaudio_playing_drum_kit.mp4" type="video/mp4"></video></td>
+					<td><video id="video3_drum" controls><source src="./resources/video/Table_1/drum/foley_crafter_playing_drum_kit.mp4" type="video/mp4"></video></td>
+					<td><video id="video4_drum" controls><source src="./resources/video/Table_1/drum/rewas_playing_drum_kit.mp4" type="video/mp4"></video></td>
+				</tr>
+			
+				
+			
+				<tr>
+					<td>
+						<div class="content-container">
+							<div class="button-container">
+								<button class="btn btn-outline-primary" onclick="changeVideos_wood('_chopping_wood')">Chopping wood</button>
+								<button class="btn btn-outline-primary" onclick="changeVideos_wood('_buzzer_ringing')">Buzzer ringing</button>
+							</div>
+						</div>
+					</td>
+					<td><video id="videoGT_tree" controls><source src="./resources/video/Table_1/tree/GT_chopping_wood.mp4" type="video/mp4"></video></td>
+					<td><video id="video1_tree" controls><source src="./resources/video/Table_1/tree/ours_chopping_wood.mp4" type="video/mp4"></video></td>
+					<td><video id="video2_tree" controls><source src="./resources/video/Table_1/tree/mmaudio_chopping_wood.mp4" type="video/mp4"></video></td>
+					<td><video id="video3_tree" controls><source src="./resources/video/Table_1/tree/foley_crafter_chopping_wood.mp4" type="video/mp4"></video></td>
+					<td><video id="video4_tree" controls><source src="./resources/video/Table_1/tree/rewas_chopping_wood.mp4" type="video/mp4"></video></td>
+				</tr>
+			
+				<tr>
+					<td>
+						<div class="content-container">
+							<div class="button-container">
+								<button class="btn btn-outline-primary" onclick="changeVideos_roof('_hammering_nails')">Hammering Nails</button>
+								<button class="btn btn-outline-primary" onclick="changeVideos_roof('_glass_shattering')">Glass Shattering</button>
+							</div>
+						</div>
+					</td>
+					<td><video id="videoGT_roof" controls><source src="./resources/video/Table_1/roof/GT_hammering_nails.mp4" type="video/mp4"></video></td>
+					<td><video id="video1_roof" controls><source src="./resources/video/Table_1/roof/ours_hammering_nails.mp4" type="video/mp4"></video></td>
+					<td><video id="video2_roof" controls><source src="./resources/video/Table_1/roof/mmaudio_hammering_nails.mp4" type="video/mp4"></video></td>
+					<td><video id="video3_roof" controls><source src="./resources/video/Table_1/roof/foley_crafter_hammering_nails.mp4" type="video/mp4"></video></td>
+					<td><video id="video4_roof" controls><source src="./resources/video/Table_1/roof/rewas_hammering_nails.mp4" type="video/mp4"></video></td>
+				</tr>
+			
+				<tr>
+					<td>
+						<div class="content-container">
+							<div class="button-container">
+								<button class="btn btn-outline-primary" onclick="changeVideos_cow('_cattle_mooing')">Cattle Mooing</button>
+								<button class="btn btn-outline-primary" onclick="changeVideos_cow('_man_burping')">Man Burping</button>
+							</div>
+						</div>
+					</td>
+					<td><video id="videoGT_cow" controls><source src="./resources/video/Table_1/cow/GT_cattle_mooing.mp4" type="video/mp4"></video></td>
+					<td><video id="video1_cow" controls><source src="./resources/video/Table_1/cow/ours_cattle_mooing.mp4" type="video/mp4"></video></td>
+					<td><video id="video2_cow" controls><source src="./resources/video/Table_1/cow/mmaudio_cattle_mooing.mp4" type="video/mp4"></video></td>
+					<td><video id="video3_cow" controls><source src="./resources/video/Table_1/cow/foley_crafter_cattle_mooing.mp4" type="video/mp4"></video></td>
+					<td><video id="video4_cow" controls><source src="./resources/video/Table_1/cow/rewas_cattle_mooing.mp4" type="video/mp4"></video></td>
+				</tr>
+			</table>
+			
+			
+		</section>
+		<!-- <script>
+			function changeVideos(Text) {
+				document.getElementById("video1").src = "./resources/video/Table_1/" + Text + "_vid1_our.mp4";
+				document.getElementById("video2").src = "./resources/video/Table_1/" + Text + "_vid1_mmaudio.mp4";
+				document.getElementById("video3").src = "./resources/video/Table_1/" + Text + "_vid1_folley.mp4";
+				document.getElementById("video4").src = "./resources/video/Table_1/" + Text + "_vid1_REWAS.mp4";
+			}
+		</script> -->
+
+
+		<script>
+			function changeVideos_keyboard(Text) {
+				document.getElementById("video1_keyboard").src = "./resources/video/Table_1/keyboard/our" + Text + ".mp4";
+				document.getElementById("video2_keyboard").src = "./resources/video/Table_1/keyboard/mmaudio" + Text + ".mp4";
+				document.getElementById("video3_keyboard").src = "./resources/video/Table_1/keyboard/foley_crafter" + Text + ".mp4";
+				document.getElementById("video4_keyboard").src = "./resources/video/Table_1/keyboard/rewas" + Text + ".mp4";
+			
+			}
+		</script>
+
+
+		<script>
+			function changeVideos_wood(Text) {
+				document.getElementById("video1_tree").src = "./resources/video/Table_1/tree/ours" + Text + ".mp4";
+				document.getElementById("video2_tree").src = "./resources/video/Table_1/tree/mmaudio" + Text + ".mp4";
+				document.getElementById("video3_tree").src = "./resources/video/Table_1/tree/foley_crafter" + Text + ".mp4";
+				document.getElementById("video4_tree").src = "./resources/video/Table_1/tree/rewas" + Text + ".mp4";
+			
+			}
+		</script>
+
+		<script>
+			function changeVideos_roof(Text) {
+				document.getElementById("video1_roof").src = "./resources/video/Table_1/roof/ours" + Text + ".mp4";
+				document.getElementById("video2_roof").src = "./resources/video/Table_1/roof/mmaudio" + Text + ".mp4";
+				document.getElementById("video3_roof").src = "./resources/video/Table_1/roof/foley_crafter" + Text + ".mp4";
+				document.getElementById("video4_roof").src = "./resources/video/Table_1/roof/rewas" + Text + ".mp4";
+			
+			}
+		</script>
+
+
+		<script>
+			function changeVideos_drum(Text) {
+				document.getElementById("video1_drum").src = "./resources/video/Table_1/drum/our" + Text + ".mp4";
+				document.getElementById("video2_drum").src = "./resources/video/Table_1/drum/mmaudio" + Text + ".mp4";
+				document.getElementById("video3_drum").src = "./resources/video/Table_1/drum/foley_crafter" + Text + ".mp4";
+				document.getElementById("video4_drum").src = "./resources/video/Table_1/drum/rewas" + Text + ".mp4";
+			
+			}
+		</script>
+
+
+		<script>
+			function changeVideos_cow(Text) {
+				document.getElementById("video1_cow").src = "./resources/video/Table_1/cow/ours" + Text + ".mp4";
+				document.getElementById("video2_cow").src = "./resources/video/Table_1/cow/mmaudio" + Text + ".mp4";
+				document.getElementById("video3_cow").src = "./resources/video/Table_1/cow/foley_crafter" + Text + ".mp4";
+				document.getElementById("video4_cow").src = "./resources/video/Table_1/cow/rewas" + Text + ".mp4";
+			
+			}
+		</script>
+	</center>
+			<!-- ############### -->
+
+		<!-- dropdown -->
+
+		<!-- <div class="container">
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3">
+				<div class="col">
+					<img alt="" id="dropdown1" class="round" src="./resources/dropdown/dropdown1/1.png" width="100%" style="padding-right: 2%; max-width:250px;"/>
+					<div class="btn-group my-btn" id="myDropdown">
+						<button type="button" onclick="document.getElementById('dropdown1').src='./resources/dropdown/dropdown1/1.png'" class="btn btn-info">Dropdown</button>
+						<button type="button" class="btn my-btn-info btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+							<span class="visually-hidden">Toggle Dropdown</span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" onclick="document.getElementById('dropdown1').src='./resources/dropdown/dropdown1/2.png'">2</a></li>
+							<li><a class="dropdown-item" onclick="document.getElementById('dropdown1').src='./resources/dropdown/dropdown1/3.png'">3</a></li>
+							<li><a class="dropdown-item" onclick="document.getElementById('dropdown1').src='./resources/dropdown/dropdown1/4.png'">4</a></li>
+							<li><hr class="dropdown-divider"></li> 
+							<li><a class="dropdown-item" onclick="document.getElementById('dropdown1').src='./resources/dropdown/dropdown1/1.png'">1</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col">
+					<img alt="" id="dropdown2" class="round" src="./resources/dropdown/dropdown2/1.png" width="100%" style="padding-right: 2%; max-width:250px;"/>
+					<div class="btn-group my-btn" id="myDropdown">
+						<button type="button" onclick="document.getElementById('dropdown2').src='./resources/dropdown/dropdown2/1.png'" class="btn btn-info">Dropdown</button>
+						<button type="button" class="btn my-btn-info btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+							<span class="visually-hidden">Toggle Dropdown</span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" onclick="document.getElementById('dropdown2').src='./resources/dropdown/dropdown2/2.png'">2</a></li>
+							<li><a class="dropdown-item" onclick="document.getElementById('dropdown2').src='./resources/dropdown/dropdown2/3.png'">3</a></li>
+							<li><a class="dropdown-item" onclick="document.getElementById('dropdown2').src='./resources/dropdown/dropdown2/4.png'">4</a></li>
+							<li><hr class="dropdown-divider"></li> 
+							<li><a class="dropdown-item" onclick="document.getElementById('dropdown2').src='./resources/dropdown/dropdown2/1.png'">1</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col">
+					<img alt="" id="dropdown3" class="round" src="./resources/dropdown/dropdown3/1.png" width="100%" style="padding-right: 2%; max-width:250px;"/>
+					<div class="btn-group my-btn" id="myDropdown">
+						<button type="button" onclick="document.getElementById('dropdown3').src='./resources/dropdown/dropdown3/1.png'" class="btn btn-info">Dropdown</button>
+						<button type="button" class="btn my-btn-info btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+							<span class="visually-hidden">Toggle Dropdown</span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" onclick="document.getElementById('dropdown3').src='./resources/dropdown/dropdown3/2.png'">2</a></li>
+							<li><a class="dropdown-item" onclick="document.getElementById('dropdown3').src='./resources/dropdown/dropdown3/3.png'">3</a></li>
+							<li><a class="dropdown-item" onclick="document.getElementById('dropdown3').src='./resources/dropdown/dropdown3/4.png'">4</a></li>
+							<li><hr class="dropdown-divider"></li> 
+							<li><a class="dropdown-item" onclick="document.getElementById('dropdown3').src='./resources/dropdown/dropdown3/1.png'">1</a></li>
+						</ul>
+					</div>
+				</div>
+		</div>
+		</center> -->
+		<!-- end images with dropdown menu -->
+
+
+
+
+		
+	<!-- <footer>
+			<p>© 2025 Your Name | <a href="https://github.com/yourusername/paper-demo">GitHub Repo</a></p>
+		</footer> -->
+		<!-- bibtex citation -->
+		<p class="section" id="bibtex"><b>Bibtex</b></p>
+		<table border="0">
+		<tbody>
+			<pre class="command-copy"><div class="container"><div class="row"><div class="col" id="citation">
+@article{benita2025controllableautomaticfoleyartist,
+      title={Controllable Automatic Foley Artist}, 
+      author={Roi Benita and Michael Finkelson and Tavi Halperin and Gleb Sterkin and Yossi Adi},
+      year={2025},
+      journal={arXiv preprint arXiv:2504.06778},
+      url={https://arxiv.org/abs/2504.06778}, 
+}
+		</div><div class="col text-end"><button type="button" class="btn btn-light" onclick="copyBib()" onmouseover="console.log('hover');"><i class="fa-regular fa-copy"></i></button></div></div></div></pre>
+		</tbody>
+		</table>
+		<!-- end bibtex citation -->
+
+		<!-- <div class="container"> -->
+			<!-- <p class="text-left">
+				More results, comparison to other methods and further discussion about our model can be found in the <a href="resources/supp.pdf" target="_blank" rel="noopener noreferrer">supplementary material</a>.<br>
+				Our official code implementation can be found in the official <a href="https://github.com" target="_blank" rel="noopener noreferrer">github repository</a>.
+			</p> -->
+		<!-- </div> -->
+		
+
+		<!-- <center>
+			<table class="table" width="1" style="max-width: 400px;">
+				<tbody>
+					<tr>
+						<td width="50%" style="text-align: center;">
+							<a target="_blank" rel="noopener noreferrer" href="resources/paper.pdf" style="color:black !important;">
+								<img alt="" id="supp" class="round" width="100%" style="max-width:150px" border="1px solid" src="./resources/paper.png"/>
+							</a>
+						</td>
+						<td width="50%" style="text-align: center;">
+							<a href="https://github.com/finmickey/CAFA" target="_blank" rel="noopener noreferrer">
+								<img alt="" id="github_logo" class="round" width="100%" style="max-width:150px" src="./resources/github_logo.png"/>
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td style="font-size:14pt; text-align: center;"
+							<span><a class="btn btn-outline-primary" href='resources/paper.pdf' role="button" style="font-size: 16px;">Supplementary</a></span>
+						</td>
+						<td style="font-size:14pt; text-align: center;">
+							<span><a class="btn btn-outline-primary" href='https://github.com/finmickey/CAFA' role="button" style="font-size: 16px;">Code</a></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</center> -->
+
+		<hr>
+		<br>
+
+		
+	<br>
+
+</div>
+
+<script src="functionality.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
