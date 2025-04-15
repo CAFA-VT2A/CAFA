@@ -20,15 +20,21 @@ This repository provides the inference tools, pretrained weights, and test resul
 ## Creative prompts conditioing
 | *Typing on typewriter* | *Playing drumkit* |
 |------------------------|------------------|
-| <video src="assets/our_typing_on_typewriter_drum.mp4" controls width="100%"></video> | <video src="assets/our_playing_drum_kit.mp4" controls width="100%"></video> |
+|[ <video src="assets/our_typing_on_typewriter_drum.mp4" controls width="100%"></video>](https://github.com/user-attachments/assets/b214fe1f-75ea-4661-a951-42af44230809
+) | [<video src="assets/our_playing_drum_kit.mp4" controls width="100%"></video>](https://github.com/user-attachments/assets/5f4b5ac6-0fdc-4fac-98c0-7005030790b0
+) |
 
 | *Man burping* | *Cattle mooing* |
 |---------------|----------------|
-| <video src="assets/our_man_burping.mp4" controls width="100%"></video> | <video src="assets/our_cattle_mooing.mp4" controls width="100%"></video> |
+| [<video src="assets/our_man_burping.mp4" controls width="100%"></video>](https://github.com/user-attachments/assets/46046adf-6feb-425c-a309-ee505409d5bd
+) | [<video src="assets/our_cattle_mooing.mp4" controls width="100%"></video>](https://github.com/user-attachments/assets/b7222e3f-57a6-40d0-97a7-0f2c065dca9b
+) |
 
 | *Dog barking* | *Typing on typewriter* |
 |---------------|------------------------|
-| <video src="assets/our_dog_barking.mp4" controls width="100%"></video> | <video src="assets/our_typing_on_typewriter_true.mp4" controls width="100%"></video> |
+| [<video src="assets/our_dog_barking.mp4" controls width="100%"></video>](https://github.com/user-attachments/assets/55c1a04b-ce00-4ef8-8fd6-f28bf6335ae4
+) | [<video src="assets/our_typing_on_typewriter_true.mp4" controls width="100%"></video>](https://github.com/user-attachments/assets/5c731201-273c-4764-859b-b91d012e049f
+) |
 # Installation
 1. We recommend working in a fresh enviornment
 ```bash
