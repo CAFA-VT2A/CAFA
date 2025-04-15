@@ -5,7 +5,6 @@
 [Demo Page (TODO)](TODO) |
 [Paper](https://arxiv.org/abs/2504.06778) |
 [Model](https://huggingface.co/MichaelFinkelson/CAFA-avclip)
-
 </div>
 
 # Introduction
@@ -29,7 +28,7 @@ source env/bin/activate
 ```
 2. Install preqrequisite if not installed yet
 ```bash
-pip install torch torchvision torchaudio
+pip install torch torchvision torchaudio wheel
 # Used for downloading the ckpt
 git lfs install
 ``` 
@@ -41,13 +40,13 @@ pip install -r requirements.txt --use-deprecated=legacy-resolver
 ```bash
 mkdir ckpts
 
-wget -O ckpts/avclip.pt https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/sync/sync_models/24-01-04T16-39-21/24-01-04T16-39-21.pt
-
 GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/MichaelFinkelson/CAFA-avclip ckpts/
 
 cd ckpts
 git lfs pull
 cd ..
+
+wget -O ckpts/avclip.pt https://a3s.fi/swift/v1/AUTH_a235c0f452d648828f745589cde1219a/sync/sync_models/24-01-04T16-39-21/24-01-04T16-39-21.pt
 ``` 
 # Inference
 An inference script is provided at `demo.py`
@@ -75,7 +74,7 @@ For all available options:
 python demo.py --help
 ```
 # Outputs
-We provide the model's generations of the VGGSound test set at [this huggingface dataset]()
+We provide the model's generations of the VGGSound test set at [this huggingface dataset](https://huggingface.co/datasets/MichaelFinkelson/CAFA-VGGSound-Test)
 # Citation
 ```bibtex
 @article{benita2025controllableautomaticfoleyartist,
