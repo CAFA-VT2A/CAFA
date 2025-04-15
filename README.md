@@ -15,8 +15,8 @@
 This repository provides the inference tools, pretrained weights, and test results to reproduce our results or build upon our work.
 # Examples
 ## Demo video
-<video src="assets/demo_video.mp4" controls width="100%"></video>
-
+[<video src="assets/demo_video.mp4" controls width="100%"></video>
+](https://github.com/user-attachments/assets/60e2e8b8-27c3-4060-aef9-2ed2cadee0ad)
 ## Creative prompts conditioing
 | *Typing on typewriter* | *Playing drumkit* |
 |------------------------|------------------|
