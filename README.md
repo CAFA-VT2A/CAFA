@@ -2,7 +2,7 @@
 
 # CAFA - a Controllable Automatic Foley Artist
 
-[Demo Page](https://finmickey.github.io/CAFA/) |
+[Demo Page](https://CAFA-VT2A.github.io/CAFA/) |
 [Paper](https://arxiv.org/abs/2504.06778) |
 [Model](https://huggingface.co/MichaelFinkelson/CAFA-avclip)
 </div>
@@ -15,7 +15,7 @@ This repository provides the inference tools, pretrained weights, and test resul
 # Examples
 https://github.com/user-attachments/assets/60e2e8b8-27c3-4060-aef9-2ed2cadee0ad.mp4
 
-For more examples, visit our [demo page](https://finmickey.github.io/CAFA/)
+For more examples, visit our [demo page](https://CAFA-VT2A.github.io/CAFA/)
 # Installation
 1. We recommend working in a fresh enviornment
 ```bash
