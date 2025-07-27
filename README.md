@@ -77,11 +77,11 @@ python demo.py --help
 We provide the model's generations of the VGGSound test set at [this huggingface dataset](https://huggingface.co/datasets/MichaelFinkelson/CAFA-VGGSound-Test)
 # Citation
 ```bibtex
-@article{benita2025controllableautomaticfoleyartist,
+@inproceedings{benita2025controllableautomaticfoleyartist,
       title={Controllable Automatic Foley Artist}, 
       author={Roi Benita and Michael Finkelson and Tavi Halperin and Gleb Sterkin and Yossi Adi},
       year={2025},
-      journal={arXiv preprint arXiv:2504.06778},
+      booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
       url={https://arxiv.org/abs/2504.06778}, 
 }
 ```
